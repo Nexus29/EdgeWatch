@@ -8,6 +8,6 @@ struct Device
 
 	public:
 		Device(int id);
-		Data DeviceData();
+		Data deviceData();
 };
 
