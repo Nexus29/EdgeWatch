@@ -10,6 +10,8 @@ add_executable(core
 	src/Device.cpp
 	src/Process.cpp
 	src/Queue.cpp
+	src/EventManager.cpp
+	src/AlertLogger.cpp
 )
 
 find_package(Threads REQUIRED)
