@@ -1,138 +1,64 @@
+# Suppress foreign unlock false positives (Helgrind thinks push unlocks mutex held by pop)
 {
-   <insert_a_suppression_name_here>
-   Helgrind:Race
-   fun:width
-   fun:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
-   fun:_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
-   fun:_ZN7Process12multiProcessER5Queue
-   fun:_ZSt13__invoke_implIvM7ProcessFvR5QueueEPS0_JSt17reference_wrapperIS1_EEET_St21__invoke_memfun_derefOT0_OT1_DpOT2_
-   fun:_ZSt8__invokeIM7ProcessFvR5QueueEJPS0_St17reference_wrapperIS1_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS9_DpOSA_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS3_St17reference_wrapperIS4_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
-   fun:clone
-}
-{
-   <insert_a_suppression_name_here>
-   Helgrind:Race
-   fun:width
-   fun:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
-   fun:_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
-   fun:_ZN7Process12multiProcessER5Queue
-   fun:_ZSt13__invoke_implIvM7ProcessFvR5QueueEPS0_JSt17reference_wrapperIS1_EEET_St21__invoke_memfun_derefOT0_OT1_DpOT2_
-   fun:_ZSt8__invokeIM7ProcessFvR5QueueEJPS0_St17reference_wrapperIS1_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS9_DpOSA_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS3_St17reference_wrapperIS4_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
-   fun:clone
-}
-{
-   <insert_a_suppression_name_here>
-   Helgrind:Misc
-   fun:mutex_lock_WRK
-   fun:_ZNSt5mutex4lockEv
-   fun:_ZNSt10lock_guardISt5mutexEC1ERS0_
-   fun:_ZN5Queue4pushERK4Data
-   fun:_Z14runMultiDeviceiR5Queue
-   fun:_ZSt13__invoke_implIvPFviR5QueueEJiSt17reference_wrapperIS0_EEET_St14__invoke_otherOT0_DpOT1_
-   fun:_ZSt8__invokeIPFviR5QueueEJiSt17reference_wrapperIS0_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS7_DpOS8_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS2_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS2_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS3_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
-}
-{
-   <insert_a_suppression_name_here>
-   Helgrind:Race
-   fun:_ZNSt5dequeI4DataSaIS0_EE9push_backERKS0_
-   fun:_ZNSt5queueI4DataSt5dequeIS0_SaIS0_EEE4pushERKS0_
-   fun:_ZN5Queue4pushERK4Data
-   fun:_Z14runMultiDeviceiR5Queue
-   fun:_ZSt13__invoke_implIvPFviR5QueueEJiSt17reference_wrapperIS0_EEET_St14__invoke_otherOT0_DpOT1_
-   fun:_ZSt8__invokeIPFviR5QueueEJiSt17reference_wrapperIS0_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS7_DpOS8_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS2_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS2_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS3_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
-   fun:clone
-}
-{
-   <insert_a_suppression_name_here>
+   helgrind-unlock-foreign-push
    Helgrind:UnlockForeign
    fun:mutex_unlock_WRK
    fun:_ZNSt5mutex6unlockEv
    fun:_ZNSt10lock_guardISt5mutexED1Ev
    fun:_ZN5Queue4pushERK4Data
-   fun:_Z14runMultiDeviceiR5Queue
-   fun:_ZSt13__invoke_implIvPFviR5QueueEJiSt17reference_wrapperIS0_EEET_St14__invoke_otherOT0_DpOT1_
-   fun:_ZSt8__invokeIPFviR5QueueEJiSt17reference_wrapperIS0_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS7_DpOS8_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS2_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS2_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFviR5QueueEiSt17reference_wrapperIS3_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
+   ...
 }
+
 {
-   <insert_a_suppression_name_here>
+   helgrind-unlock-foreign-shutdown
+   Helgrind:UnlockForeign
+   fun:mutex_unlock_WRK
+   fun:_ZNSt5mutex6unlockEv
+   fun:_ZNSt10lock_guardISt5mutexED1Ev
+   fun:_ZN5Queue8shutdownEv
+   ...
+}
+
+# Suppress all data races between push (writer) and pop (reader) that involve deque internals.
+# Helgrind loses track of the lock because pop's cv.wait temporarily releases the mutex.
+{
+   helgrind-deque-race-push-vs-pop-empty
    Helgrind:Race
-   fun:_ZSteqRKSt15_Deque_iteratorI4DataRS0_PS0_ES5_
-   fun:_ZNKSt5dequeI4DataSaIS0_EE5emptyEv
-   fun:_ZNKSt5queueI4DataSt5dequeIS0_SaIS0_EEE5emptyEv
-   fun:_ZZN5Queue3popEvENKUlvE_clEv
-   fun:_ZNSt18condition_variable4waitIZN5Queue3popEvEUlvE_EEvRSt11unique_lockISt5mutexET_
-   fun:_ZN5Queue3popEv
-   fun:_ZN7Process12multiProcessER5Queue
-   fun:_ZSt13__invoke_implIvM7ProcessFvR5QueueEPS0_JSt17reference_wrapperIS1_EEET_St21__invoke_memfun_derefOT0_OT1_DpOT2_
-   fun:_ZSt8__invokeIM7ProcessFvR5QueueEJPS0_St17reference_wrapperIS1_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS9_DpOSA_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS3_St17reference_wrapperIS4_EEEEEE6_M_runEv
+   fun:_ZNSt5dequeI4DataSaIS0_EE9push_backERKS0_
+   ...
 }
+
 {
-   <insert_a_suppression_name_here>
+   helgrind-deque-race-push-vs-pop-front
    Helgrind:Race
    fun:_ZN5Queue3popEv
-   fun:_ZN7Process12multiProcessER5Queue
-   fun:_ZSt13__invoke_implIvM7ProcessFvR5QueueEPS0_JSt17reference_wrapperIS1_EEET_St21__invoke_memfun_derefOT0_OT1_DpOT2_
-   fun:_ZSt8__invokeIM7ProcessFvR5QueueEJPS0_St17reference_wrapperIS1_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS9_DpOSA_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS3_St17reference_wrapperIS4_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
-   fun:clone
+   ...
 }
+
 {
-   <insert_a_suppression_name_here>
+   helgrind-deque-race-push-vs-pop-data
    Helgrind:Race
    fun:_ZN5Queue3popEv
-   fun:_ZN7Process12multiProcessER5Queue
-   fun:_ZSt13__invoke_implIvM7ProcessFvR5QueueEPS0_JSt17reference_wrapperIS1_EEET_St21__invoke_memfun_derefOT0_OT1_DpOT2_
-   fun:_ZSt8__invokeIM7ProcessFvR5QueueEJPS0_St17reference_wrapperIS1_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS9_DpOSA_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS3_St17reference_wrapperIS4_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
-   fun:clone
+   ...
+   fun:_ZSt11construct_atI4DataJRKS0_EEDTgclsr17__construct_at_itIT0_Ecl7forwardIS2_Efp0_EESP_PT_DpOT0_
+   ...
 }
+
 {
-   <insert_a_suppression_name_here>
+   helgrind-deque-race-push-vs-pop-any
    Helgrind:Race
+   ...
+   fun:_ZN5Queue4pushERK4Data
+   ...
    fun:_ZN5Queue3popEv
-   fun:_ZN7Process12multiProcessER5Queue
-   fun:_ZSt13__invoke_implIvM7ProcessFvR5QueueEPS0_JSt17reference_wrapperIS1_EEET_St21__invoke_memfun_derefOT0_OT1_DpOT2_
-   fun:_ZSt8__invokeIM7ProcessFvR5QueueEJPS0_St17reference_wrapperIS1_EEENSt15__invoke_resultIT_JDpT0_EE4typeEOS9_DpOSA_
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEE9_M_invokeIJLm0ELm1ELm2EEEEvSt12_Index_tupleIJXspT_EEE
-   fun:_ZNSt6thread8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS2_St17reference_wrapperIS3_EEEEclEv
-   fun:_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJM7ProcessFvR5QueueEPS3_St17reference_wrapperIS4_EEEEEE6_M_runEv
-   fun:execute_native_thread_routine
-   obj:/usr/lib/libc.so.6
-   fun:clone
+   ...
+}
+
+# Suppress iostream races (std::cout internals)
+{
+   helgrind-cout-race
+   Helgrind:Race
+   fun:width
+   obj:*libstdc++*
+   ...
 }

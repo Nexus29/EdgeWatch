@@ -10,11 +10,14 @@ class Queue {
 		std::queue<Data> queue;
 		mutable std::mutex mtx;
 		std::condition_variable cv;
-		std::atomic<bool> finished{false};
+		bool finished = false; ;
 
 	public:
 		void push(const Data& data);
 		Data pop();
 		void shutdown();
-
+		bool isFinished() const {
+			std::lock_guard<std::mutex> lock(mtx);
+			return finished;
+    	}
 };

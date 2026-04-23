@@ -6,9 +6,9 @@ void Queue::push(const Data& data) {
 		std::lock_guard<std::mutex> lock(mtx);
 		if (!finished) {
 			queue.push(data);
+			cv.notify_one();
 		}
 	}
-	cv.notify_one();
 }
 
 Data Queue::pop() {
@@ -30,6 +30,8 @@ Data Queue::pop() {
 }
 
 void Queue::shutdown() {
-	finished = true;
-	cv.notify_all();
+	{
+		std::lock_guard<std::mutex> lock(mtx);
+		cv.notify_all();
+	}
 }
