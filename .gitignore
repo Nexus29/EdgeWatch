@@ -5,3 +5,5 @@ build/
 build-*/
 *.o
 *.obj
+vgcore.224349
+report.log
