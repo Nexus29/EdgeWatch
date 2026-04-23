@@ -6,9 +6,9 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories(include)
 
 add_executable(core
-    src/main.cpp
-    src/Device.cpp
-    src/Process.cpp
+	src/main.cpp
+	src/Device.cpp
+	src/Process.cpp
 	src/Queue.cpp
 )
 

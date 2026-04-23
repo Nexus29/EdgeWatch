@@ -9,12 +9,22 @@ void Process::process(const Data& deviceData) {
 }
 
 void Process::multiProcess(Queue& queue) {
-    while (true) {
-        Data data = queue.pop();
+	std::cout << "[PROCESSOR] Started processing...\n";
+	
+	try {
+		while (true) {
+			Data data = queue.pop();
 
-        std::cout << "[PROCESSOR] Device " << data.id
-                  << " | CPU: " << data.usage
-                  << "% | Temp: " << data.temperature
-                  << "°C\n";
-    }
+			std::cout << "[PROCESSOR] Device " << data.id
+					  << " | CPU: " << data.usage
+					  << "% | Temp: " << data.temperature
+					  << "°C\n";
+		}
+	} catch (const std::runtime_error& e) {
+		std::cout << "[PROCESSOR] Shutting down: " << e.what() << "\n";
+	} catch (const std::exception& e) {
+		std::cerr << "[PROCESSOR] Unexpected error: " << e.what() << "\n";
+	}
+	
+	std::cout << "[PROCESSOR] Stopped\n";
 }
