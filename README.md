@@ -127,7 +127,7 @@ cd EdgeWatch
 ### 2. Build C++ Core
 
 ```bash
-cd core-cpp
+cd engine
 cmake -B build -G Ninja
 cmake --build build
 ./build/core
