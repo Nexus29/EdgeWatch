@@ -81,11 +81,11 @@ EdgeWatch/
 │   └── EdgeWatch.Api/
 │
 ├── shared/
-│   ├── models/
+│   ├── contracts/
 │
 ├── README.md 
 |
-└── docker/
+└── docker/ (optional)
 
 ````
 
