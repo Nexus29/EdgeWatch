@@ -1,0 +1,9 @@
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.csproj.AssemblyReference.cache
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/rpswa.dswa.cache.json
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.GeneratedMSBuildEditorConfig.editorconfig
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.AssemblyInfoInputs.cache
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.AssemblyInfo.cs
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.csproj.CoreCompileInputs.cache
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.MvcApplicationPartsAssemblyInfo.cs
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.MvcApplicationPartsAssemblyInfo.cache
+/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/obj/Debug/net10.0/EdgeWatch.Api.sourcelink.json
