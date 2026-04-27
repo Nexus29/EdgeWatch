@@ -4,8 +4,13 @@ build/
 .qtcreator/
 build-*/
 *.o
-*.obj
+*.obj                 # C++ object files (keep this)
 vgcore.224349
 report.log
-*bin/
-*obj/
+backend-dotnet/EdgeWatch.Api/bin/
+backend-dotnet/EdgeWatch.Api/obj/
+*.user                # .NET user settings (does not conflict with *.pro.user)
+*.suo
+*.cache
+packages/
+*.nupkg
