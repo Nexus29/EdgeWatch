@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "py8EcskqEEs=",
+  "dgSpecHash": "uxev2ENFxSo=",
   "success": true,
   "projectFilePath": "/home/nexus/Desktop/EdgeWatch/backend-dotnet/EdgeWatch.Api/EdgeWatch.Api.csproj",
   "expectedPackageFiles": [
-    "/home/nexus/.nuget/packages/microsoft.aspnetcore.openapi/10.0.4/microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",
+    "/home/nexus/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0/microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
     "/home/nexus/.nuget/packages/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "/home/nexus/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
     "/home/nexus/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",

@@ -16,6 +16,8 @@ app.MapPost("/metrics", async (DeviceData data) =>
 	using var db = new AppDbContext();
 	db.DeviceData.Add(data);
 	await db.SaveChangesAsync();
+
+	return Results.Ok();
 });
 
 app.MapPost("/alerts", async (Alert alert) =>
@@ -23,6 +25,8 @@ app.MapPost("/alerts", async (Alert alert) =>
 	using var db = new AppDbContext();
 	db.Alerts.Add(alert);
 	await db.SaveChangesAsync();
+
+	return Results.Ok();
 });
 
 // View all stored data

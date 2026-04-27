@@ -8,21 +8,21 @@
     ".NETCoreApp,Version=v10.0": {
       "EdgeWatch.Api/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "10.0.4",
+          "Microsoft.AspNetCore.OpenApi": "10.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0"
         },
         "runtime": {
           "EdgeWatch.Api.dll": {}
         }
       },
-      "Microsoft.AspNetCore.OpenApi/10.0.4": {
+      "Microsoft.AspNetCore.OpenApi/10.0.0": {
         "dependencies": {
           "Microsoft.OpenApi": "2.0.0"
         },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "10.0.4.0",
-            "fileVersion": "10.0.426.12010"
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
           }
         }
       },
@@ -92,12 +92,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.OpenApi/10.0.4": {
+    "Microsoft.AspNetCore.OpenApi/10.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OsEhbmT4Xenukau5YCR867gr/HmuAJ9DqMBPQGTcmdNU/TqBqdcnB+yLNwD/mTdkHzLBB+XG7cI4H1L5B1jx+Q==",
-      "path": "microsoft.aspnetcore.openapi/10.0.4",
-      "hashPath": "microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512"
+      "sha512": "sha512-0aqIF1t+sA2T62LIeMtXGSiaV7keGQaJnvwwmu+htQdjCaKYARfXAeqp4nHH9y2etpilyZ/tnQzZg4Ilmo/c4Q==",
+      "path": "microsoft.aspnetcore.openapi/10.0.0",
+      "hashPath": "microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/9.0.0": {
       "type": "package",

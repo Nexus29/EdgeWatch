@@ -5,7 +5,7 @@
 class EventManager {
 	public:
 		void subscribe(IObserver* observer);
-		void notify(const AlertEvent& event);
+		void notify(const Alert& event);
 
 	private:
 		std::vector<IObserver*> observers;

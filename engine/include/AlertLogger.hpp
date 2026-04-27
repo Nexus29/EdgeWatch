@@ -3,5 +3,5 @@
 
 class AlertLogger : public IObserver {
 	public:
-		void onAlert(const AlertEvent& event) override;
+		void onAlert(const Alert& event) override;
 };

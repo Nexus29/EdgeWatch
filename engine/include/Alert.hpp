@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-struct AlertEvent {
+struct Alert {
 	int deviceId;
 	std::string message;
 };
