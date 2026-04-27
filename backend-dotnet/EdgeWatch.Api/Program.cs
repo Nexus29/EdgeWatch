@@ -42,4 +42,17 @@ app.MapGet("/alerts", () =>
 	return db.Alerts.ToList();
 });
 
+app.MapGet("/devices/{id}", async (int id) =>
+{
+	using var db = new AppDbContext();
+
+	var data = db.DeviceData
+		.Where(d => d.DeviceId == id)
+		.OrderByDescending(d => d.CreatedAt)
+		.Take(1)
+		.ToList();
+
+	return Results.Ok(data);
+});
+
 app.Run();
